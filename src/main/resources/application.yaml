@@ -1,0 +1,4 @@
+spring:
+    port: 8080
+api-gastos:
+  url: http://localhost:8090/gastos

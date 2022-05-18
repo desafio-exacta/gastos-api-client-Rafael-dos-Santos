@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gerenciamento de gastos</title>
+</head>
+<body>
+<h2>Detalhes</h2>
+<form action="#" th:action="@{/}" th:object="${form}" method="post">
+    <table>
+        <tbody>
+        <tr>
+            <td>Nome da pessoa:</td>
+            <td><span th:text="${gasto.nomePessoa}"></span></td>
+        </tr>
+        <tr>
+            <td>Descrição:</td>
+            <td><span th:text="${gasto.descricao}"></span></td>
+        </tr>
+        <tr>
+            <td>Data:</td>
+            <td><span th:text="${gasto.data}"></span></td>
+        </tr>
+        <tr>
+            <td>Tags:</td>
+            <td><span th:text="${gasto.tags}"></span></td>
+        </tr>
+        <tr>
+            <td>Valor:</td>
+            <td><span th:text="${gasto.valor}"></span></td>
+        </tr>
+        <tr>
+        <td><a href="/" th:text="Voltar"></a></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gerenciamento de gastos</title>
+</head>
+<body>
+<h2>Novo Gasto</h2>
+<form action="#" th:action="@{/}" th:object="${form}" method="post">
+    <table>
+        <tbody>
+        <tr>
+            <td>Nome pessoa</td>
+            <td><input th:field="${gasto.nomePessoa}" /></td>
+        </tr>
+        <tr>
+            <td>Descrição</td>
+            <td><input th:field="${gasto.descricao}" /></td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td><input th:field="${gasto.data}" />(YYYY-MM-DDTHH:ss)</td>
+        </tr>
+        <tr>
+            <td>Tags</td>
+            <td><input th:field="${gasto.tags}" /></td>
+        </tr>
+        <tr>
+            <td>Valor</td>
+            <td><input th:field="${gasto.valor}" /></td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="submit" id="submitButton" th:value="Salvar">
+</form>
+</body>
+</html>

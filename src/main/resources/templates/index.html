@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gerenciamento de gastos</title>
+</head>
+<body>
+<h2>Gastos</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome pessoa</th>
+        <th>Valor</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${gastos.empty}">
+        <td colspan="2">Não há gastos cadastrados</td>
+    </tr>
+    <tr th:each="gasto : ${gastos}">
+        <td><span th:text="${gasto.id}"></span></td>
+        <td><span th:text="${gasto.nomePessoa}"></span></td>
+        <td><span th:text="${gasto.valor}"></span></td>
+        <td><a th:href="@{/detalhes?id={id}(id=${gasto.id})}" th:text="Detahes"></a></td>
+    </tr>
+    <tr>
+        <td><a href="/cadastro" th:text="Cadastrar"></a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
