@@ -1,14 +1,11 @@
 # Gerenciamento de Gastos Pessoais Web
 * http://localhost:8080/
-
-#### Gastos - Lista vazia
-![](images/tela 1.png)
-
+* 
 #### Novo Gasto
-![](images/tela 2.png)
+![](https://raw.githubusercontent.com/rveck/gastos-api-client/master/images/tela%202.png)
 
 #### Gastos
-![](images/tela 3.png)
+![](https://raw.githubusercontent.com/rveck/gastos-api-client/master/images/tela%203.png)
 
 ### Detalhes
-![](images/tela 4.png)
+![](https://raw.githubusercontent.com/rveck/gastos-api-client/master/images/tela%204.png)
